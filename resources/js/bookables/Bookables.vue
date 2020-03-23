@@ -33,9 +33,9 @@ export default {
   },
   computed: {
     rows() {
-      return this.bookables === null
-        ? 0
-        : Math.ceil(this.bookables.length / this.columns);
+      return this.bookables
+        ? Math.ceil(this.bookables.length / this.columns)
+        : 0;
     }
   },
   methods: {
