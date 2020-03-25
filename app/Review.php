@@ -23,6 +23,6 @@ class Review extends Model
 
     public function getKeyType()
     {
-        return 'string'
+        return 'string';
     }
 }
